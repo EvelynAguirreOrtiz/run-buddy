@@ -129,10 +129,7 @@ section {
     text-align: center;
 }
 /* remove this entire CSS rule */
-.intro h2 {
-    /* add this alongside your other declarations */
-   
-}
+
 .intro p {
     /* add this alongside your other declarations */
     margin: 0 auto;
@@ -145,10 +142,7 @@ section {
     text-align: center;
     background: #fce138;
 }
-/* and this one */
-.steps h2 {
-    
-}
+
 .steps div {
     margin-bottom: 80px;
 }
