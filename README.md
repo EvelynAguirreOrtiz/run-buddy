@@ -3,7 +3,7 @@
 ## Purpose
 A website that offers fitness training services.
 
-## Buitle With
+## Built With
 * HTML
 * CSS
 
