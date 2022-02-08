@@ -11,7 +11,6 @@
 }
 
 body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -51,10 +50,6 @@ header nav {
     margin: 7px 0;
 }
 
-/* remove code
-header nav ul li {
-    display: inline;
-}*/
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -62,9 +57,8 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
-/* change font-size */
+
 header nav ul li a {
-    /*margin: 0 30px;*/
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -117,10 +111,9 @@ section {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
-    /*position: relative;*/
-     /*height: 600px;*/
 }
 /* Hero Style End */
+
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -136,6 +129,7 @@ section {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .hero-form {
     border: 3px solid var(--secondary-color);
     background-color: /*#fce138*/ rgba(252, 225, 56, 0.8);
@@ -145,17 +139,17 @@ section {
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    /*position: absolute;
-    bottom: 120px;
-    right: 140px;*/
 }
+
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
 } 
+
 .hero-form p {
     margin: 5px 0 15px 0;
 }
+
 .form-input {
     border: 1px solid var(--secondary-color);
     display: block;
@@ -172,11 +166,12 @@ section {
     background-color: rgba(255, 255, 255, 1);
     outline: none;
 }
+
 .hero-form label {
     margin: 0 5px;
 }
+
 .hero-form button {
-    /* */
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border: none;
@@ -194,6 +189,7 @@ section {
 .checkbox-wrapper input, .radio-wrapper input {
     opacity: 0;
 }
+
 .checkbox-wrapper label, .radio-wrapper label {
     position: relative;
     left: 10px;
@@ -210,9 +206,11 @@ section {
     top: -4px;
     left: -30px;
 }
+
 .radio-wrapper label::before {
     border-radius: 50%;
 }
+
 .radio-wrapper label::after {
     content: "";
     width: 20px;
@@ -224,6 +222,7 @@ section {
     top: -3px;
     background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
+
 .checkbox-wrapper label::after {
     content: "";
     height: 6px;
@@ -235,15 +234,16 @@ section {
     top: 1px;
     transform: rotate(-58deg);
 }
+
 .checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
     content: none;
 }
+
 .checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked + label::after {
     content: "";
 }
 
 .intro p {
-    /* add this alongside your other declarations */
     margin: 0 auto;
     line-height: 1.7;
     color: var(--tertiary-color);
@@ -251,29 +251,22 @@ section {
     font-size: 20px;
     text-align: center;
 }
+
 .steps {
-    /*text-align: center;*/
     background: var(--primary-color);
 }
 
-/*.steps div {
-    margin-bottom: 80px;
-}
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-}*/
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    /*border-bottom: 1px solid #39a6b2;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--tertiary-color);
 }
+
 .step:last-child {
     border-bottom: none;
 }
@@ -286,8 +279,8 @@ section {
     color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
-    /*margin-top: 10px;*/
 }
+
 .step-info {
     flex: 2 70%;
     display: flex;
@@ -298,100 +291,102 @@ section {
     flex: 1 12%;
     margin-right: 20px;
 }
+
 .step-img img {
     max-width: 100%;
 }
+
 .step-text {
     flex: 12;
 }
+
 .step-text p {
     color: var(--tertiary-color);
     font-size: 18px;
 }
+
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: var(--secondary-color);
 }
 
-/*.steps span {
-    font-size: 38px;
-}*/
-
 .section-title {
     font-size: 48px;
     color: var(--secondary-color);
-    /*margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;*/
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
 }
+
 .primary-border {
     border-color: var(--primary-color);
 }
+
 .secondary-border {
     border-color: var(--tertiary-color);
 }
+
 .trainers {
-    /*text-align: center;*/
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .trainer {
-    
     margin: 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
     flex: 1;
-    /*overflow: auto;
-    width: 900px;*/
 }
+
 .trainer img{
     width: 100%;
-    /*float: left;*/
+    
 }
 .trainer-bio {
     padding: 25px;
-    /*float: left;
-    width: 65%;*/
     line-height: 1.3;
 }
+
 .text-left {
     text-align: left;
 }
+
 .text-right {
     text-align: right;
 }
+
 .flex-row {
     display: flex;
 }
+
 .trainer-bio h3 {
     font-size: 28px;
-    /*margin-bottom: 8px;*/
 }
+
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
 }
+
 .trainer-bio p {
     font-size: 17px;
 }
 /* REACH OUT STYLES START */
 .contact {
-    /*text-align: center;*/
     background: var(--secondary-color);
 }
+
 .contact h2{
     color: var(--primary-color);
 }
+
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -404,30 +399,29 @@ section {
 }
 
 .contact-info iframe {
-   /*width: 400px;*/
     height: 400px;
 }
+
 .contact-info div {
-    /*width: 410px;
-    display: inline-block;  
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;*/
     color: white;
 }
+
 .contact-info h3 {
     color: var(--primary-color);
     font-size: 32px;
 }
+
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
 }
+
 .contact-info a {
     color: var(--primary-color);
 }
+
 .contact-form input, .contact-form textarea {
     border: 1px solid var(--secondary-color);
     display: block;
@@ -438,13 +432,13 @@ section {
     margin-bottom: 15px;
     margin-top: 5 px;
     border-radius: 10px;
-    /* add background color */
     background-color: rgba(255, 255, 255, 0.75);
 }
 /* contact form focus */
 .contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255, 255, 255, 1); 
 }
+
 .contact-form button {
     width: 100%;
     border: none;
@@ -468,59 +462,70 @@ section {
         justify-content: center;
         position: relative;
     }
+
     header h1 {
         width: 100%;
         text-align: center;
     }
+
     header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
     }
+
     footer h2, footer div {
         text-align: center;
         width: 100%;
     }
+
     .hero-cta, .hero-form {
         width: 100%;
     }
+
     .hero-cta {
         text-align: center;
     }
+
     .section-title {
         width: 80%;
     }
+
     .trainer {
         flex: 0 70%;
     }
+
     .contact-info iframe {
         flex: 1 100%;
     }
 }
-
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width:768px) {
     .section {
         padding: 30px 15px;
     }
+
     .step h3 {
         flex: 1 100%;
         text-align: center;
     }
+
     .step-info {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
     }
+
     .step-img {
         flex: 0 32%;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
     .step-text {
         flex: 100%;
-    }
+    } 
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -528,22 +533,28 @@ section {
     .hero-form button {
         width: 100%;
     }
+
     .section-title {
         width: 95%;
     }
+
     .intro p {
         width: 100%;
     }
+
     .trainer {
         flex: 0 100%;
     }
+
     .contact-info {
         text-align: center;
     }
+
     .contact-info > * {
         flex: 0 100%;
     }
+
     .contact-form {
         order: 3;
-    } 
+    }
 }
