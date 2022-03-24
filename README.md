@@ -8,7 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-https://lernantino.github.io/run-buddy/
+https://evelynaguirreortiz.github.io/run-buddy-module-1-project-utsa-bc-02-2022/
 
 ## Contribution
 Made w ❤️ by Evelyn Aguirre
